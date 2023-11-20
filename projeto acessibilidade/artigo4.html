@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="artigo4.css">
+    <script src="quiz.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Quiz: Acessibilidade</h1><br>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="artigo1.html">Rampa</a></li>
+                <li><a href="artigo2.html">Elevador</a></li>
+                <li><a href="artigo3.html">Braille</a></li>
+                <li><a href="artigo4.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <h2>Selecione a parte que deseja ser lida pelo leitor automático:</h2>
+    <button onclick="lerTextoSelecionado()">Ler Texto Selecionado</button>
+
+    <script>
+        function lerTextoSelecionado() {
+            const selecionado = window.getSelection().toString();
+            if (selecionado) {
+                const utterance = new SpeechSynthesisUtterance(selecionado);
+                speechSynthesis.speak(utterance);
+            } else {
+                alert("Selecione um texto antes de clicar para ler.");
+            }
+        }
+    </script>
+
+    <div class="quiz-container">
+        <h1>Quiz de Acessibilidade</h1>
+        <form id="quiz-form">
+            <div class="question">
+                <label for="q1">1. O que é acessibilidade?</label><br>
+                <input type="radio" name="q1" value="a"> Acesso fácil a um local específico<br>
+                <input type="radio" name="q1" value="b"> Inclusão e facilidade de uso para pessoas com diferentes habilidades<br>
+                <input type="radio" name="q1" value="c"> Restrição de acesso a determinados grupos<br>
+            </div>
+
+            <div class="question">
+                <label for="q2">2. Qual é a importância da acessibilidade?</label><br>
+                <input type="radio" name="q2" value="a"> É apenas uma opção estética<br>
+                <input type="radio" name="q2" value="b"> Garante que todos, independentemente de suas habilidades, possam usar e interagir com produtos, serviços e ambientes<br>
+                <input type="radio" name="q2" value="c"> Não tem importância significativa<br>
+            </div>
+
+            <div class="question">
+                <label for="q3">3. O que é a Linguagem Brasileira de Sinais (Libras)?</label><br>
+                <input type="radio" name="q3" value="a"> Um código de barras<br>
+                <input type="radio" name="q3" value="b"> Um sistema de comunicação visual utilizado por pessoas surdas<br>
+                <input type="radio" name="q3" value="c"> Uma linguagem de programação<br>
+            </div>
+            
+            <div class="question">
+                <label for="q4">4. Qual é o objetivo da rampa de acessibilidade?</label><br>
+                <input type="radio" name="q4" value="a"> Decoração<br>
+                <input type="radio" name="q4" value="b"> Facilitar o acesso a locais elevados para pessoas com mobilidade reduzida<br>
+                <input type="radio" name="q4" value="c"> Restringir o acesso a cadeirantes<br>
+            </div>
+
+            <div class="question">
+                <label for="q5">5. O que são recursos de acessibilidade em um site?</label><br>
+                <input type="radio" name="q5" value="a"> Recursos apenas para pessoas com deficiência visual<br>
+                <input type="radio" name="q5" value="b"> Recursos que tornam o site mais fácil de usar para pessoas com diferentes habilidades<br>
+                <input type="radio" name="q5" value="c"> Recursos que tornam o site menos acessível para todos<br>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <div id="result-container" style="display: none;">
+            <h2>Resultado:</h2>
+            <p id="result-text"></p>
+        </div>
+    </div>
+
+
+    <footer>
+        <p>&copy; Feito por Luigi Lucio</p>
+    </footer>
+</body>
+
+</html>

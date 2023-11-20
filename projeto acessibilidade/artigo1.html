@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rampa</title>
+    <link rel="stylesheet" href="artigo1.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Rampa: Acessibilidade para os Populares</h1><br>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="artigo1.html">Rampa</a></li>
+                <li><a href="artigo2.html">Elevador</a></li>
+                <li><a href="artigo3.html">Braille</a></li>
+                <li><a href="artigo4.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2>Selecione a parte que deseja ser lida pelo leitor automático:</h2>
+    <button onclick="lerTextoSelecionado()">Ler Texto Selecionado</button>
+    <p>Imagem abaixo mostra uma rampa de acessibilidade*</p>
+
+    <script>
+        function lerTextoSelecionado() {
+            const selecionado = window.getSelection().toString();
+            if (selecionado) {
+                const utterance = new SpeechSynthesisUtterance(selecionado);
+                speechSynthesis.speak(utterance);
+            } else {
+                alert("Selecione um texto antes de clicar para ler.");
+            }
+        }
+    </script>
+    <main>
+        <article>
+            <h2>A Importância da Acessibilidade</h2>
+            <p>A rampa de acessibilidade desempenha um papel crucial ao superar barreiras físicas, proporcionando um caminho suave e inclinado que facilita o acesso a edifícios e espaços públicos. Sua importância vai além da praticidade, estendendo-se à promoção da independência e dignidade dos usuários, permitindo que eles transitem de forma autônoma e segura, sem depender de assistência. O design adequado, incluindo inclinação correta, largura suficiente e corrimãos seguros, é essencial para garantir a eficácia e segurança da rampa. Além disso, a presença de rampas em espaços públicos, como calçadas e parques, promove a inclusão social, tornando possível a participação ativa na vida da comunidade.</p>
+            <br>
+            <section>
+                <h3>Rampa de Acessibilidade</h3>
+                <p>As rampas de acessibilidade desempenham um papel crucial na promoção da inclusão social e na quebra de barreiras físicas para pessoas com diferentes habilidades. Essas estruturas são <br>
+                     projetadas para permitir que cadeirantes, idosos, gestantes e outras pessoas com mobilidade reduzida possam transitar em ambientes públicos e privados de maneira autônoma e segura. <br>
+
+                    
+                    Uma rampa bem projetada não é apenas uma peça arquitetônica, mas um símbolo tangível de respeito à diversidade e um passo significativo em direção a uma sociedade mais inclusiva. 
+                    </p>
+                <h4>Aspectos Fundamentais</h4>
+                <p>
+                     Superando Obstáculos Físicos: A principal função de uma rampa é superar obstáculos físicos, como degraus e escadas, que podem ser impeditivos para pessoas com dificuldades de <br>
+                     locomoção. <br>
+                     Isso não apenas facilita o acesso a edifícios e espaços públicos, mas também proporciona independência e dignidade aos usuários.
+                    <br><br>
+                     Projeto Adequado: O desenho e a construção de uma rampa de acessibilidade devem seguir diretrizes específicas para garantir sua eficácia. Isso inclui a inclinação adequada, largura suficiente e corrimãos seguros. O objetivo é criar uma estrutura que seja fácil de usar e que atenda a uma variedade de necessidades.
+                    <br><br>
+                     Inclusão em Espaços Públicos: Rampas são essenciais em espaços públicos, como calçadas, parques, estações de transporte público e locais de entretenimento. Sua presença possibilita que todas as pessoas participem ativamente na vida da comunidade, independentemente de suas condições físicas.
+                    <br><br>
+                     Acessibilidade Universal: O conceito de acessibilidade universal vai além das rampas físicas. Envolvem também a disponibilização de informações em formatos acessíveis, a criação de sinalizações adequadas e a consideração das necessidades de todas as pessoas ao projetar espaços e serviços.
+                    <br><br>
+                     Benefícios para Todos: Embora as rampas de acessibilidade sejam projetadas para atender às necessidades das pessoas com mobilidade reduzida, seus benefícios se estendem a todos. Carrinhos de bebê, carrinhos de compras e pessoas temporariamente lesionadas também se beneficiam dessas estruturas.
+                    <br><br>
+                     Manutenção Adequada: Além do design inicial, a manutenção regular das rampas de acessibilidade é fundamental. Inspeções periódicas ajudam a identificar desgastes, danos ou obstruções que possam comprometer a funcionalidade da rampa. Manter a rampa em boas condições contribui para a segurança e eficácia ao longo do tempo.
+                    <br><br>
+                     Sinalização Adequada: A sinalização correta é essencial para orientar as pessoas sobre a presença de rampas de acessibilidade. Sinalizações visíveis e informações claras indicam a localização das rampas, permitindo que os usuários as encontrem facilmente.
+                    <br><br>
+                     Rampas Portáteis: Em certos casos, rampas portáteis podem ser uma solução temporária ou adicional. Elas são úteis em eventos, construções temporárias ou situações em que uma solução permanente não é viável. Certifique-se de que as rampas portáteis atendam aos padrões de segurança e acessibilidade.
+                    <br><br>
+                     Conscientização e Treinamento: Promover a conscientização sobre a importância da acessibilidade e fornecer treinamento adequado a funcionários e membros da comunidade são passos cruciais. Isso ajuda a garantir que as pessoas estejam cientes da necessidade de manter espaços acessíveis e saibam como utilizá-los corretamente.
+                    <br><br>
+                     Inovações Tecnológicas: A tecnologia desempenha um papel crescente na melhoria da acessibilidade. Inovações como aplicativos móveis que fornecem informações sobre acessibilidade em espaços públicos e sensores inteligentes que detectam a presença de usuários podem ser incorporadas para aprimorar ainda mais a experiência.
+                </p>
+                <br><h5>LEI Nº 7.405, DE 12 DE NOVEMBRO DE 1985.</h5>
+                <p>Torna obrigatória a colocação do ''Símbolo Internacional de Acesso” em todos os locais e serviços que permitam sua utilização por pessoas portadoras de deficiência e dá outras providências.</p>
+                
+                <img src="C:\Users\529652\3D Objects/rampa.jpg" alt="Imagem mostra uma rampa de acessibilidade"> <br> <br>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; Feito por Luigi Lucio</p>
+    </footer>
+</body>
+
+</html>

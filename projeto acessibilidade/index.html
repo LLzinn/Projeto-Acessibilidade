@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Acessibilidade</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Acessibilidade para os Populares</h1><br>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="artigo1.html">Rampa</a></li>
+                <li><a href="artigo2.html">Elevador</a></li>
+                <li><a href="artigo3.html">Braille</a></li>
+                <li><a href="artigo4.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2>Selecione a parte que deseja ser lida pelo leitor automático:</h2>
+    <button onclick="lerTextoSelecionado()">Ler Texto Selecionado</button>
+
+    <script>
+        function lerTextoSelecionado() {
+            const selecionado = window.getSelection().toString();
+            if (selecionado) {
+                const utterance = new SpeechSynthesisUtterance(selecionado);
+                speechSynthesis.speak(utterance);
+            } else {
+                alert("Selecione um texto antes de clicar para ler.");
+            }
+        }
+    </script>
+    <main>
+        <section>
+            <h2>Bem-vindo ao nosso site sobre acessibilidade!</h2>
+            <p>Explore nossos artigos para aprender mais sobre como tornar o mundo mais acessível para todos.</p>
+        </section>
+
+        <section>
+            <h2>O Que Fazemos</h2>
+            <p>Nosso site é dedicado a promover a conscientização sobre acessibilidade. Aqui, discutimos tópicos
+                relacionados a rampas, design inclusivo e inovações tecnológicas que tornam a vida mais fácil para
+                pessoas com diferentes habilidades.</p>
+        </section>
+
+        <section>
+            <h2>Por Que Acessibilidade Importa?</h2>
+            <p>A acessibilidade é fundamental para criar um ambiente inclusivo onde todas as pessoas possam participar
+                plenamente na sociedade. Descubra a importância de superar barreiras físicas e promover a igualdade de
+                oportunidades para todos.</p>
+<br><br><br><br>
+<p>Imagem abaixo mostra a Inclusão e acessibilidade no cotidiano</p>
+                <img src="C:\Users\529652\3D Objects/tipos.png" alt="Imagem mostra Inclusão e acessibilidade no cotidiano"> <br> <br>
+    </main>
+
+    <footer>
+        <p>&copy; Feito por Luigi Lucio</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Braille</title>
+    <link rel="stylesheet" href="artigo3.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Braille: Acessibilidade para os Populares</h1><br>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="artigo1.html">Rampa</a></li>
+                <li><a href="artigo2.html">Elevador</a></li>
+                <li><a href="artigo3.html">Braille</a></li>
+                <li><a href="artigo4.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2>Selecione a parte que deseja ser lida pelo leitor automático:</h2>
+    <button onclick="lerTextoSelecionado()">Ler Texto Selecionado</button>
+
+    <script>
+        function lerTextoSelecionado() {
+            const selecionado = window.getSelection().toString();
+            if (selecionado) {
+                const utterance = new SpeechSynthesisUtterance(selecionado);
+                speechSynthesis.speak(utterance);
+            } else {
+                alert("Selecione um texto antes de clicar para ler.");
+            }
+        }
+    </script>
+    <main>
+        <article>
+            <h2>A Importância da Acessibilidade</h2>
+            <p>A importância do Braille na acessibilidade é significativa, especialmente para as pessoas com deficiência visual. O Braille é um sistema tátil de leitura e escrita que utiliza combinações de pontos em relevo para representar letras e números.</p>
+            <br><h2>Braille, sistema tátil de leitura e escrita</h2><br>
+            <p>
+                Baseado em combinações de pontos em relevo, é uma inovação revolucionária que desempenha um papel essencial na promoção da acessibilidade para pessoas com deficiência visual. Seu impacto se estende por diversas áreas, oferecendo oportunidades de independência, educação e participação social. Aqui está um olhar mais aprofundado sobre a importância do Braille na acessibilidade:
+                <br><br>
+                 Empoderamento Individual:
+                O Braille é uma ferramenta poderosa que capacita indivíduos cegos ou com deficiência visual a se tornarem leitores e escritores independentes. Ao oferecer um meio tátil de representar o alfabeto, números e caracteres especiais, o Braille proporciona autonomia na comunicação escrita.
+                <br><br>
+                 Acesso à Educação:
+                No contexto educacional, o Braille desempenha um papel crucial na inclusão de estudantes com deficiência visual. Materiais educacionais, como livros didáticos e documentos, são transcritos para Braille, permitindo que esses alunos participem plenamente das atividades escolares e tenham acesso ao conhecimento.
+                <br><br>
+                 Comunicação Universal:
+                A presença de Braille em sinais, placas e etiquetas torna os espaços públicos mais acessíveis. Seja em edifícios, transportes públicos ou locais de trabalho, a inclusão de informações em Braille facilita a compreensão e a orientação para pessoas cegas, promovendo uma comunicação mais eficaz e igualdade de acesso.
+                <br><br>
+                 Acessibilidade Digital:
+                Com os avanços tecnológicos, o Braille também encontrou seu espaço em dispositivos eletrônicos. Leitores de tela que utilizam o Braille possibilitam o acesso a conteúdos digitais, como telas de computadores, tablets e smartphones. Isso abre novas fronteiras para a participação em ambientes online.
+                <br><br>
+                 Cultura e Identidade:
+                Além de sua utilidade prática, o Braille desempenha um papel na preservação da cultura e identidade da comunidade de pessoas cegas. Permite o acesso a obras literárias, partituras musicais e outros elementos culturais, promovendo a apreciação e participação ativa.
+                <br><br>
+                 Igualdade de Oportunidades:
+                Ao proporcionar acesso à leitura, escrita e informação, o Braille contribui para a criação de sociedades mais equitativas. Ele desempenha um papel fundamental na promoção da igualdade de oportunidades em áreas como educação, emprego e participação social.
+                <br><br>
+                 Desenvolvimento de Habilidades:
+                A aprendizagem do Braille não apenas proporciona acesso à informação, mas também promove o desenvolvimento de habilidades cognitivas, táteis e motoras. Essas habilidades são fundamentais para o crescimento e a autonomia das pessoas com deficiência visual.</p>
+                <br><br>    
+            
+                <img src="C:\Users\529652\3D Objects/alfabeto.jpg" alt="Imagem mostra o alfabeto do braille de acessibilidade"> <br> <br>
+
+<p>Imagem acima mostra o alfabeto do braille de acessibilidade*</p>
+<br>
+                <h3>Princípios Fundamentais:</h3>
+                <br>
+                <p> Os princípios fundamentais do Braille são a base que sustenta esse sistema tátil de leitura e escrita, desenvolvido por Louis Braille no século XIX. Aqui estão alguns dos princípios centrais que definem o Braille e sua aplicação:
+                    <br><br>  
+                    Representação Alfabética:
+                    O Braille representa o alfabeto através de combinações específicas de pontos em relevo em células táteis. Cada célula contém seis pontos, organizados em duas colunas verticais de três pontos cada. Essa representação alfabética permite que os usuários leiam e escrevam textos.
+                    <br><br>  
+                    Padrão Universal:
+                    O sistema Braille é um padrão universalmente reconhecido para a escrita e leitura tátil. Ele é utilizado em muitos idiomas ao redor do mundo, com adaptações para diferentes alfabetos e caracteres especiais.
+                    <br><br>  
+                    Estrutura Modular:
+                    A estrutura modular do Braille, com suas células compostas por seis pontos, permite uma expansão flexível para incluir caracteres adicionais e símbolos matemáticos. Isso torna o Braille versátil e aplicável a diversas situações.
+                    <br><br>  
+                    Tato e Leitura Linear:
+                    A leitura Braille é linear, da esquerda para a direita, permitindo que os usuários percorram o texto de maneira sequencial. A informação é adquirida através do tato, com os dedos deslizando sobre as células para identificar os padrões específicos.
+                    <br><br>  
+                    Adaptação a Diferentes Contextos:
+                    <br>
+                    O Braille é adaptado para diferentes contextos, incluindo a transcrição de materiais impressos, a representação de fórmulas matemáticas e musicais, e até mesmo a notação de linguagens de programação em contextos informáticos.
+                    Design Inclusivo: O design dos elevadores é cuidadosamente planejado para garantir a acessibilidade a todos. Isso inclui portas largas, espaço suficiente para manobras de cadeiras de rodas e controles de fácil alcance.
+                    <br><br>
+                    Normas e Regulamentações: A construção e instalação de elevadores de acessibilidade seguem normas e regulamentações específicas para garantir a segurança e eficácia. Isso inclui requisitos para capacidade de carga, velocidade e dispositivos de segurança.</p>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; Feito por Luigi Lucio</p>
+    </footer>
+</body>
+
+</html>

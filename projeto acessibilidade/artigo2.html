@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elevador</title>
+    <link rel="stylesheet" href="artigo2.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Elevador: Acessibilidade para os Populares</h1><br>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="artigo1.html">Rampa</a></li>
+                <li><a href="artigo2.html">Elevador</a></li>
+                <li><a href="artigo3.html">Braille</a></li>
+                <li><a href="artigo4.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2>Selecione a parte que deseja ser lida pelo leitor automático:</h2>
+    <button onclick="lerTextoSelecionado()">Ler Texto Selecionado</button>
+
+    <script>
+        function lerTextoSelecionado() {
+            const selecionado = window.getSelection().toString();
+            if (selecionado) {
+                const utterance = new SpeechSynthesisUtterance(selecionado);
+                speechSynthesis.speak(utterance);
+            } else {
+                alert("Selecione um texto antes de clicar para ler.");
+            }
+        }
+    </script>
+    <main>
+        <article>
+            <h2>A Importância da Acessibilidade</h2>
+            <p>O elevador de acessibilidade desempenha um papel vital ao proporcionar acesso vertical em edifícios, eliminando a necessidade de escadas e permitindo que pessoas com diferentes habilidades alcancem diferentes níveis com facilidade. Seu design inclusivo, caracterizado por portas largas, espaço suficiente para manobras de cadeiras de rodas e controles de fácil alcance, visa atender às necessidades de todos os usuários. Além de sua contribuição para a acessibilidade física, a presença de elevadores promove a inclusão social, fomentando uma cultura de igualdade e respeito à diversidade. A conformidade com normas e regulamentações específicas assegura a instalação e manutenção seguras desses dispositivos, que beneficiam não apenas pessoas com mobilidade reduzida, mas também idosos, mães com carrinhos de bebê e outros em situações temporárias de mobilidade comprometida. Em resumo, os elevadores de acessibilidade são peças essenciais na criação de sociedades mais inclusivas e acessíveis, promovendo a igualdade de acesso para todos.</p>
+            <br><h2>Elevador de Acessibilidade: Superando Barreiras e Promovendo Inclusão</h2><br>
+            <p>
+                O elevador de acessibilidade é uma inovação tecnológica crucial que desempenha um papel fundamental em tornar espaços públicos e privados mais inclusivos. Projetado para proporcionar mobilidade a pessoas com deficiências físicas ou mobilidade reduzida, esses elevadores são uma resposta eficaz às barreiras arquitetônicas que limitam a independência e participação plena na sociedade.
+                <br><br>
+                Princípios Básicos:
+                Os elevadores de acessibilidade são projetados com princípios específicos para atender às necessidades das pessoas com diferentes capacidades. Eles geralmente possuem portas largas, espaço suficiente para manobras de cadeiras de rodas e controles de fácil alcance. Esses elementos visam garantir a segurança e autonomia dos usuários.
+                <br><br>
+                Aplicações Diversificadas:
+                Esses elevadores não são apenas limitados a edifícios comerciais; eles encontram aplicação em residências, escolas, hospitais e outros locais públicos. Sua presença é vital para garantir que todos possam acessar diferentes níveis de um edifício sem depender de escadas, especialmente em situações em que a mobilidade é desafiadora.
+                <br><br>
+                Inclusão Social:
+                A presença de elevadores de acessibilidade contribui significativamente para a inclusão social. Permitir que pessoas com mobilidade reduzida acessem todos os andares de um edifício não apenas atende a requisitos legais, mas também promove uma cultura de igualdade e respeito à diversidade.
+                <br><br>
+                Design Inclusivo:
+                O design de elevadores de acessibilidade é orientado pela ideia de design inclusivo. Isso significa que esses dispositivos são projetados para serem utilizados por todas as pessoas, independentemente de suas habilidades físicas. A facilidade de acesso e operação torna o ambiente mais acolhedor para todos.
+                <br><br>
+                Normas e Regulamentações:
+                A instalação e manutenção de elevadores de acessibilidade são regidas por normas e regulamentações específicas para garantir padrões de segurança e funcionalidade. Essas diretrizes visam criar um ambiente seguro e acessível para todos os usuários.
+                <br><br>
+                Benefícios Além da Mobilidade Reduzida:
+                Além de atender às necessidades de pessoas com deficiências físicas, os elevadores de acessibilidade também beneficiam idosos, mães com carrinhos de bebê, pessoas temporariamente lesionadas e outras situações em que a mobilidade é temporariamente comprometida.
+                <br><br>
+                Promovendo a Independência:
+                Um dos maiores impactos dos elevadores de acessibilidade é a promoção da independência. Permitir que os usuários se movam verticalmente sem depender de assistência física não apenas aumenta a autoestima, mas também oferece a liberdade de explorar ambientes de maneira autônoma.
+                <br><br>
+                Em suma, os elevadores de acessibilidade desempenham um papel vital na criação de sociedades mais inclusivas e acessíveis. Essa tecnologia não apenas supera barreiras físicas, mas também desafia as limitações sociais, promovendo a igualdade de acesso para todos.</p>
+            <br>
+                <img src="C:\Users\529652\3D Objects/elevador.png" alt="Imagem mostra um elevador de acessibilidade"> <br> <br>
+<p>Imagem acima mostra um elevador de acessibilidade*</p>
+<br><br><br>
+                <h3>Princípios Fundamentais:</h3>
+                <br>
+                <p> Acessibilidade Vertical: Os elevadores de acessibilidade são projetados para proporcionar acesso vertical em edifícios, superando a necessidade de escadas e permitindo que pessoas com diferentes habilidades alcancem diferentes níveis com facilidade.
+                    <br><br>
+                    Design Inclusivo: O design dos elevadores é cuidadosamente planejado para garantir a acessibilidade a todos. Isso inclui portas largas, espaço suficiente para manobras de cadeiras de rodas e controles de fácil alcance.
+                    <br><br>
+                    Normas e Regulamentações: A construção e instalação de elevadores de acessibilidade seguem normas e regulamentações específicas para garantir a segurança e eficácia. Isso inclui requisitos para capacidade de carga, velocidade e dispositivos de segurança.</p>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; Feito por Luigi Lucio</p>
+    </footer>
+</body>
+
+</html>

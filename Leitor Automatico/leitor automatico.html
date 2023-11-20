@@ -1,0 +1,25 @@
+  <style>
+        .selecionado {
+            text-decoration: underline;
+        }
+    </style>
+
+<body>
+    <h1>Exemplo de Leitor Automático</h1>
+    <p id="texto">Este é um exemplo de texto que pode ser lido automaticamente.</p>
+    <button onclick="lerTextoSelecionado()">Ler Texto Selecionado</button>
+
+    <script>
+        function lerTextoSelecionado() {
+            const selecionado = window.getSelection().toString();
+            if (selecionado) {
+                const utterance = new SpeechSynthesisUtterance(selecionado);
+                speechSynthesis.speak(utterance);
+            } else {
+                alert("Selecione um texto antes de clicar para ler.");
+            }
+        }
+    </script>
+</body>
+
+</html>
